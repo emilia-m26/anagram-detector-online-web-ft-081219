@@ -5,7 +5,7 @@ class Anagram
     @word=word
   end
   
-  def self.match(array)
+  def match(array)
     array.select do |tester|
       (@word.split("").sort) == (tester.split("").sort)
     end
